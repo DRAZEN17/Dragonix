@@ -202,6 +202,7 @@ const AnimeItemStyled = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        color: #ffffffff;
 
         p {
             display: flex;

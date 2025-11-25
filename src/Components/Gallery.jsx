@@ -58,6 +58,7 @@ function Gallery() {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff1f1ff;
 
     .back {
         position: absolute;
