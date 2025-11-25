@@ -50,7 +50,7 @@ const SidebarStyled = styled.div`
             display: flex;
             flex-direction: column;
             gap: .4rem;
-            color: #7a0000ff;
+            color: #c20808ff;
             h4{
                 font-size: 1.1rem;
             }

@@ -134,7 +134,7 @@ const HomepageStyled = styled.div`
         padding: 0.7rem 1.5rem;
         border-radius: 30px;
         font-size: 1.2rem;
-        background-color: #970505ff;
+        background-color: #c20808ff;
         cursor: pointer;
         font-family: inherit;
         border: 5px solid #b35454ff;
