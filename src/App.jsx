@@ -3,7 +3,6 @@ import AnimeItem from "./Components/AnimeItem";
 import Gallery from "./Components/Gallery";
 import Homepage from "./Components/Homepage";
 
-
 function App() {
 
 return (
