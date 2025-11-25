@@ -32,7 +32,7 @@ function Sidebar() {
 const SidebarStyled = styled.div`
     margin-top: 2rem;
     background-color: #000000ff;
-    border-top: 5px solid #c20808ff;
+    border-top: 5px solid #7a0000ff
     padding-right: 5rem;
     padding-left: 2rem;
     padding-top: 2rem;
@@ -43,14 +43,14 @@ const SidebarStyled = styled.div`
         img{
             width: 100%;
             border-radius: 5px;
-            border: 5px solid #c20808ff;
+            border: 5px solid ##7a0000fff;
         }
         a{
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
             gap: .4rem;
-            color: #c20808ff;
+            color: #7a0000ff;
             h4{
                 font-size: 1.1rem;
             }

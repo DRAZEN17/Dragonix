@@ -115,7 +115,7 @@ const AnimeItemStyled = styled.div`
         font-size: 3rem;
         margin-bottom: 1.5rem;
         cursor: pointer;
-        background:linear-gradient( to right, #c20808ff, #dfc4c4ff);
+        background:linear-gradient( to right, #7a0000ff, #dfc4c4ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all .4s ease-in-out;
@@ -141,7 +141,7 @@ const AnimeItemStyled = styled.div`
         margin: 3rem 0;
         font-size: 2rem;
         cursor: pointer;
-        background:linear-gradient( to right, #c20808ff,  23%, #dfc4c4ff);
+        background:linear-gradient( to right, #7a0000ff,  23%, #dfc4c4ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -219,8 +219,8 @@ const AnimeItemStyled = styled.div`
             }
             h4{
                 padding: .5rem 0;
-                color: #c20808ff;
-                background:linear-gradient( to right, #c20808ff, #dfc4c4ff);
+                color: #7a0000ff;
+                background:linear-gradient( to right, #7a0000ff, #dfc4c4ff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transition: all .4s ease-in-out;
