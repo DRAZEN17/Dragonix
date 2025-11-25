@@ -58,8 +58,40 @@ const PopularStyled = styled.div`
             border-radius: 5px;
         }
     }
-`;
+
+    @media screen and (max-width: 1024px) {
+        .popular-anime {
+        padding: 2rem 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .popular-anime {
+        padding: 1rem 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+        }
+
+        a {
+        height: 400px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .popular-anime {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        }
+
+        a {
+        height: 350px;
+        }
+    }
+    `;
 
 
 export default Popular
- 

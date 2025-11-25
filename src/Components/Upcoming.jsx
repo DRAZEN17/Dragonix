@@ -59,6 +59,43 @@ const PopularStyled = styled.div`
             border-radius: 5px;
         }
     }
-`;
+
+    
+    /*  Tablet */
+    @media screen and (max-width: 1024px) {
+        .upcoming-anime {
+        padding: 2rem 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+    }
+
+    /*  Mobile */
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .upcoming-anime {
+        padding: 1rem 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-content: center;
+        }
+
+        a {
+        height: 400px;
+        }
+    }
+
+    /*  Small phones */
+    @media screen and (max-width: 480px) {
+        .upcoming-anime {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        }
+
+        a {
+        height: 350px;
+        }
+    }
+    `;
 
 export default Upcoming

@@ -35,9 +35,10 @@ function Homepage() {
     return (
       
         <HomepageStyled>
-          <div className='drax'>
-            <h1 className='draz'>Dragonix</h1>
-          </div>
+      <div className='drax'>
+        <h1 className='draz'>Anidar</h1>
+        <p className='radar'>Your Anime, Your Radar.</p>
+      </div>
             <header>
                 <div className="logo">
                     <h1>
@@ -75,32 +76,43 @@ function Homepage() {
         </HomepageStyled >
     )
 }
-
 const HomepageStyled = styled.div`
   width: 100vw;
   min-height: 100vh;
   background-color: #000000ff;
   overflow-x: hidden;
-  color: #e84040ff;
+  color: #ffffffff;
+  padding-top: 54px;
 
-  .drax{
-   background:linear-gradient( to right, #e84040ff, #000000ff);
-        -webkit-background-clip: background;
-        -webkit-text-fill-color: transparent;
-        transition: all .4s ease-in-out;
-        text-align: center;
-        padding: 1rem 0;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  .drax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #a91515ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .draz {
-    font-size: 6rem;
+    font-size: 50px;
     font-family: 'elegant royalty', elegant;
-    background:linear-gradient( to left, #ffffffff, #e84040ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all .4s ease-in-out;
+    color: #ffffffff;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .radar {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffffff;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    margin-bottom: 1.5px;
   }
 
   header {
@@ -108,10 +120,6 @@ const HomepageStyled = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     transition: all 0.4s ease-in-out;
-
-    @media screen and (max-width: 1530px) {
-      width: 95%;
-    }
 
     .logo {
       display: flex;
@@ -121,11 +129,14 @@ const HomepageStyled = styled.div`
     }
 
     .search-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 
       .filter-btn {
         display: flex;
@@ -181,6 +192,99 @@ const HomepageStyled = styled.div`
           color: white;
           border: none;
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1530px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .drax {
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .draz {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .radar {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    header {
+      padding: 1rem 2rem;
+
+      .logo h1 {
+        font-size: 1.5rem;
+      }
+
+      .search-container {
+        flex-direction: column;
+        gap: 0.8rem;
+
+        .filter-btn {
+          width: 100%;
+          justify-content: center;
+          font-size: 1rem;
+        }
+
+        .search-form {
+          width: 100%;
+
+          input {
+            font-size: 1rem;
+          }
+
+          button {
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .drax {
+      align-items: center;
+      padding-left: 10px;
+    }
+
+    .draz {
+      font-size: 26px;
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .radar {
+      font-size: 14px;
+      text-align: center;
+      margin-left: 0;
+    }
+
+    header {
+      padding: 1rem;
+
+      .logo h1 {
+        font-size: 1.2rem;
+      
+
+      .search-container {
+        gap: 0.5rem;
+
+        .filter-btn {
+          font-size: 0.9rem;
+          padding: 0.5rem 1rem;
+        
+
+        .search-form input {
+          font-size: 0.9rem;
         }
       }
     }

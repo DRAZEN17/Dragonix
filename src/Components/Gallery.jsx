@@ -52,26 +52,29 @@ function Gallery() {
     )
 }
 
-const GalleryStyled = styled.div`
+    const GalleryStyled = styled.div`
     background-color: #000000ff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .back{
+
+    .back {
         position: absolute;
         top: 2rem;
         left: 2rem;
-        a{
-            font-weight: 600;
-            text-decoration: none;
-            color: #c20808ff;
-            display: flex;
-            align-items: center;
-            gap: .5rem;
+
+        a {
+        font-weight: 600;
+        text-decoration: none;
+        color: #c20808ff;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
         }
     }
-    .big-image{
+
+    .big-image {
         display: inline-block;
         padding: 2rem;
         margin: 2rem 0;
@@ -79,29 +82,94 @@ const GalleryStyled = styled.div`
         border-radius: 7px;
         border: 5px solid #c20808ff;
         position: relative;
-        img{
-            width: 350px;
+
+        img {
+        width: 350px;
+        max-width: 100%;
         }
     }
 
-    .small-images{
+    .small-images {
         display: flex;
         flex-wrap: wrap;
-        gap: .5rem;
+        gap: 0.5rem;
         width: 80%;
         padding: 2rem;
         border-radius: 7px;
         background-color: #000000ff;
         border: 5px solid #c20808ff;
-        img{
-            width: 6rem;
-            height: 6rem;
-            object-fit: cover;
-            cursor: pointer;
-            border-radius: 5px;
-            border: 3px solid #c20808ff;
-        } 
+        justify-content: center;
+
+        img {
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 3px solid #c20808ff;
+        }
     }
-`;
+
+    /*  Tablet */
+    @media screen and (max-width: 1024px) {
+        .big-image img {
+        width: 300px;
+        }
+
+        .small-images {
+        width: 90%;
+        padding: 1.5rem;
+        }
+
+        .small-images img {
+        width: 5rem;
+        height: 5rem;
+        }
+    }
+
+    /*  Mobile */
+    @media screen and (max-width: 768px) {
+        .back {
+        position: static;
+        margin: 1rem 0;
+        }
+
+        .big-image {
+        padding: 1rem;
+        margin: 1rem 0;
+
+        img {
+            width: 250px;
+        }
+        }
+
+        .small-images {
+        width: 100%;
+        padding: 1rem;
+        gap: 0.4rem;
+        }
+
+        .small-images img {
+        width: 4.5rem;
+        height: 4.5rem;
+        }
+    }
+
+    /*  Small phones */
+    @media screen and (max-width: 480px) {
+        .big-image img {
+        width: 200px;
+        }
+
+        .small-images {
+        gap: 0.3rem;
+        }
+
+        .small-images img {
+        width: 4rem;
+        height: 4rem;
+        }
+    }
+    `;
 
 export default Gallery

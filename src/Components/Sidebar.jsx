@@ -29,7 +29,7 @@ function Sidebar() {
     )
 }
 
-const SidebarStyled = styled.div`
+    const SidebarStyled = styled.div`
     margin-top: 2rem;
     background-color: #000000ff;
     border-top: 5px solid #c20808ff;
@@ -56,6 +56,65 @@ const SidebarStyled = styled.div`
             }
         }
     }
-`;
+
+    /*  Tablet */
+    @media screen and (max-width: 1024px) {
+        padding: 2rem 3rem;
+
+        .anime {
+        width: 100%;
+        max-width: 200px;
+        }
+    }
+
+    /*  Mobile */
+    @media screen and (max-width: 768px) {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+        text-align: center;
+        font-size: 1.3rem;
+        }
+
+        .anime {
+        width: 100%;
+        max-width: 250px;
+        align-items: center;
+
+        a {
+            align-items: center;
+
+            h5 {
+            font-size: 1rem;
+            text-align: center;
+            }
+        }
+        }
+    }
+
+    /*  Small phones */
+    @media screen and (max-width: 480px) {
+        padding: 1rem;
+
+        h3 {
+        font-size: 1.2rem;
+        }
+
+        .anime {
+        max-width: 220px;
+
+        a h5 {
+            font-size: 0.95rem;
+        }
+        }
+    }
+    `;
 
 export default Sidebar
+
+
+
+
