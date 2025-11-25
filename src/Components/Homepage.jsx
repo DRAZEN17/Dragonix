@@ -84,7 +84,7 @@ const HomepageStyled = styled.div`
   color: #e84040ff;
 
   .drax{
-   background:linear-gradient( to right, #7a0000ff, #000000ff);
+   background:linear-gradient( to right, #e84040ff, #000000ff);
         -webkit-background-clip: background;
         -webkit-text-fill-color: transparent;
         transition: all .4s ease-in-out;
@@ -134,7 +134,7 @@ const HomepageStyled = styled.div`
         padding: 0.7rem 1.5rem;
         border-radius: 30px;
         font-size: 1.2rem;
-        background-color: #7a0000ff;
+        background-color: #970505ff;
         cursor: pointer;
         font-family: inherit;
         border: 5px solid #b35454ff;
