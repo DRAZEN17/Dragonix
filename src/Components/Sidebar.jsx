@@ -43,7 +43,7 @@ const SidebarStyled = styled.div`
         img{
             width: 100%;
             border-radius: 5px;
-            border: 5px solid ##7a0000fff;
+            border: 5px solid #c20808ff;
         }
         a{
             margin-top: 1rem;
