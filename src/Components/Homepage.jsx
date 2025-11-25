@@ -141,7 +141,7 @@ const HomepageStyled = styled.div`
         transition: all 0.4s ease-in-out;
 
         &.active {
-          background-color: #7a0000ff;
+          background-color: #c20808ff;
           color: white;
           border-color: #c13737ff;
         }
@@ -177,7 +177,7 @@ const HomepageStyled = styled.div`
           padding: 0.7rem 1.5rem;
           border-radius: 30px;
           font-size: 1rem;
-          background-color: #7a0000ff;
+          background-color: #c20808ff;
           color: white;
           border: none;
           cursor: pointer;
