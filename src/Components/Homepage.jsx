@@ -81,10 +81,10 @@ const HomepageStyled = styled.div`
   min-height: 100vh;
   background-color: #000000ff;
   overflow-x: hidden;
-  color: #c20808ff;
+  color: #e84040ff;
 
   .drax{
-   background:linear-gradient( to right, #c20808ff, #000000ff);
+   background:linear-gradient( to right, #e84040ff, #000000ff);
         -webkit-background-clip: background;
         -webkit-text-fill-color: transparent;
         transition: all .4s ease-in-out;
@@ -97,7 +97,7 @@ const HomepageStyled = styled.div`
   .draz {
     font-size: 6rem;
     font-family: 'elegant royalty', elegant;
-    background:linear-gradient( to left, #ffffffff, #c20808ff);
+    background:linear-gradient( to left, #ffffffff, #e84040ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all .4s ease-in-out;
@@ -134,14 +134,14 @@ const HomepageStyled = styled.div`
         padding: 0.7rem 1.5rem;
         border-radius: 30px;
         font-size: 1.2rem;
-        background-color: #c20808ff;
+        background-color: #970505ff;
         cursor: pointer;
         font-family: inherit;
         border: 5px solid #b35454ff;
         transition: all 0.4s ease-in-out;
 
         &.active {
-          background-color: #c20808ff;
+          background-color: #960303ff;
           color: white;
           border-color: #c13737ff;
         }
@@ -177,7 +177,7 @@ const HomepageStyled = styled.div`
           padding: 0.7rem 1.5rem;
           border-radius: 30px;
           font-size: 1rem;
-          background-color: #c20808ff;
+          background-color: #e84040ff;
           color: white;
           border: none;
           cursor: pointer;
